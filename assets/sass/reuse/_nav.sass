@@ -1,0 +1,49 @@
+.nav
+  padding: 0 1.5rem
+.nav-link
+  display: inline-block
+  vertical-align: top
+  padding: .25rem .5rem 0
+  line-height: 2.75rem
+  &.active
+    color: $primary
+  .row-body--inverted
+    padding-right: 0
+    .row-body-secondary
+      text-align: center
+      width: 1.5rem
+    .row-body-primary
+      margin-right: 1.5rem
+  .icon-userpic
+    margin-top: .5rem
+  .icon
+    height: 2.75rem
+
+.nav-link--logotype
+  padding: 0
+  color: $primary
+
+.nav-a,
+.nav-b
+  display: inline-block
+  width: 50%
+  vertical-align: top
+
+.nav-b
+  text-align: right
+
+.nav-c
+  @extend %helper-abs
+  left: 50%
+  right: auto
+  bottom: auto
+  transform: translate3d(-50%,0,0)
+
+.nav-btn
+  margin: .5rem 0
+  vertical-align: top
+  background-color: $neutral-light
+  border-radius: $r
+  color: $primary
+  .icon
+    color: $good

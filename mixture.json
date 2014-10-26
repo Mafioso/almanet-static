@@ -1,0 +1,38 @@
+{
+  "autoPrefixer": {
+    "active": true,
+    "browsers": [
+      "last 2 versions"
+    ],
+    "sourceMap": false
+  },
+  "convertHtml": {
+    "relativePaths": true
+  },
+  "debug": true,
+  "domain": null,
+  "lintScripts": true,
+  "modelSource": null,
+  "preprocessorLocations": [
+    "assets"
+  ],
+  "preprocessorScriptOutput": "assets/js",
+  "preprocessorStyleOutput": "assets/css",
+  "projectDescription": "The next generation of CRM",
+  "projectName": "crm-static",
+  "sass": {
+    "globbing": false,
+    "lineNumbers": false,
+    "outputStyle": "compact",
+    "sourceMap": false,
+    "useLibSass": false
+  },
+  "serverHostname": "crm.local",
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": false
+}

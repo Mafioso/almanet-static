@@ -1,0 +1,54 @@
+.page
+  @extend %helper-abs
+
+.page-header
+  @extend %helper-abs
+  bottom: auto
+  padding: 0 1.5rem
+  height: 8rem
+
+.page-header-filter
+  border: 1px solid $neutral
+  border-radius: $r
+  background-color: $white
+  margin: 0 .5rem
+
+.page-header-controls
+  margin: 0 .5rem
+
+.page-body
+  @extend %helper-abs
+  padding: 0 2rem
+  top: 8rem
+  overflow-y: auto
+
+.page--compact
+  .page-header
+    height: 3.25rem
+  .page-body
+    top: 3.25rem
+
+.page-breadcrumbs
+  color: $secondary
+  padding: .5rem 0
+  margin: 0
+  list-style-type: none
+  font-size: $caption
+  li
+    display: inline-block
+    vertical-align: top
+    padding: 0
+    margin: 0
+    &:last-child
+      .page-breadcrumbs-link
+        border-right: 0
+.page-breadcrumbs-link
+  display: inline-block
+  border-right: 1px solid $neutral
+  line-height: 1rem
+  padding: 0 .5rem
+  text-transform: lowercase
+  &.active
+    border-right: 0
+    color: $accent
+

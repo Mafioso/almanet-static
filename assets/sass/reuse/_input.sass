@@ -1,0 +1,61 @@
+.input-filter
+  font-size: $body
+  padding: 0
+  display: block
+  width: 100%
+  margin: 0
+  padding: 0
+  line-height: 1.5rem
+  padding: .5rem 0
+  border: 0
+  &:focus
+    outline: 0
+
+input[type="checkbox"]
+  display: none
+  + .checkbox-icon
+    color: $secondary
+    // .icon--checkbox
+    .icon--checkbox-checked
+      display: none
+  &:checked + .checkbox-icon
+    color: $accent
+    .icon--checkbox
+      display: none
+    .icon--checkbox-checked
+      display: inline-block
+
+
+.input-div
+  display: inline-block
+  border: 1px solid transparent
+  padding: 0 .25rem
+  border-radius: $r
+  max-width: 12rem
+  overflow: hidden
+  white-space: nowrap
+  line-height: 1.5rem
+  &:focus
+    border-color: $neutral
+    outline: 0
+
+.input-div--area
+  white-space: normal
+  max-width: 100%
+
+.input-div--strong
+  font-size: $large
+  font-weight: bold
+
+.input-checkboxCompact
+  font-size: $caption
+  color: $secondary
+  line-height: 1.5rem
+  .row-icon
+    width: 1.5rem
+    height: 1.5rem
+  .checkbox-icon
+    width: 1.5rem
+    .icon
+      height: 1.5rem
+      width: 1rem

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>{% block title %}Almanet{% endblock %}</title>
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+  {{ "app.css" | asset_url | stylesheet_tag }}
+</head>
+<body>
+
+  {% include "_icons" %}
+
+  <div class="body-container">
+    {% block body %}{% endblock %}
+  </div>
+
+  {{ "webfont.min.js" | asset_url | script_tag }}
+  <script>
+    WebFont.load({
+      google: { families: [ 'Roboto:400,700:latin,cyrillic', 'Roboto+Condensed::latin,cyrillic' ] }
+    });
+  </script>
+  {{ "jquery.2.1.1.min.js" | asset_url | script_tag }}
+  {{ "app.js" | asset_url | script_tag }}
+  {% block scripts %}
+  {% endblock %}
+</body>
+</html>

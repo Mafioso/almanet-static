@@ -1,0 +1,41 @@
+.body-container
+  position: relative
+  min-width: $break-1 * 1px
+  max-width: $break-2 * 1px
+  height: 100%
+  margin: auto
+
+.body-header
+  @extend %helper-abs
+  bottom: auto
+  height: 3rem
+  background-color: $white
+  box-shadow: 0 2px 0 0 $neutral
+  font-family: "Arial", "Helvetica", sans-serif
+  text-transform: uppercase
+  color: $secondary
+  z-index: 103
+
+.wf-loading .body-header
+  font-family: "Arial", "Helvetica", sans-serif
+
+.wf-active .body-header
+  font-family: $heading-fs
+
+.body-master
+  @extend %helper-abs
+  right: auto
+  width: 50%
+  background-color: $white
+  box-shadow: 2px 0 0 0 $neutral
+  z-index: 102
+
+.body-detail
+  @extend %helper-abs
+  left: 50%
+  z-index: 101
+
+.body-master,
+.body-detail
+  top: 3rem
+  overflow: hidden

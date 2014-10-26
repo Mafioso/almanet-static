@@ -1,0 +1,76 @@
+.wf-loading .dropdown-menu
+  font-family: "Arial", "Helvetica", sans-serif
+
+.wf-active .dropdown-menu
+  font-family: $body-fs
+  text-transform: none
+
+.dropdown
+  position: relative
+
+.dropdown--inline
+  display: inline-block
+
+.dropdown-toggle
+  display: block
+
+.dropdown-menu
+  color: $primary
+  position: absolute
+  top: 100%
+  display: none
+  min-width: 10rem
+  padding: 0
+  text-align: left
+  background-color: $white
+  border-radius: $r
+  opacity: 0
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.10), 0px 16px 24px 0px rgba(0,0,0,0.10)
+  background-clip: padding-box
+  .dropdown.open > &
+    display: block
+    opacity: 1
+    z-index: 1000
+.dropdown-menu-body
+  border-radius: $r
+  overflow: hidden
+
+.dropdown--left
+  .dropdown-menu
+    left: 0
+
+.dropdown--right
+  .dropdown-menu
+    right: 0
+
+.dropdown-menu-list
+  @extend %helper-blockList
+  li
+    @extend %helper-blockList-item
+
+.dropdown-menu-link
+  width: 100%
+  display: block
+  padding: 0 .5rem
+  color: $secondary
+  text-align: left
+  &:hover
+    background-color: $neutral-light
+
+
+.dropdown-menu-item-link--active
+  color: $primary
+
+
+.dropdown--imageOptions
+  .dropdown-menu
+    top: 2rem
+.btn--imageOptions
+  @extend %helper-abs
+  left: auto
+  bottom: auto
+  color: $secondary
+  background-color: $neutral
+  width: 2rem
+  .icon
+    height: 2rem
