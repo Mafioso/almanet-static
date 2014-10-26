@@ -22,7 +22,7 @@
       return;
     }
 
-    var $menu = $container.find('.dropdown-menu');
+    var $menu = $container.find('.dropdown-menu').first();
 
     if (verticalFit) {
 
