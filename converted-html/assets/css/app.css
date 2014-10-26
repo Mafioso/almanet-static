@@ -1,0 +1,468 @@
+/* [sass, assets/sass, app.sass] */
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+*, *:after, *:before { -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 6, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+html { height: 100%; font-size: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-overflow-scrolling: none; }
+
+/* line 13, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+body { height: 100%; margin: 0; padding: 0; font-family: "Arial", "Helvetica", sans-serif; font-size: 0.875rem; line-height: 2rem; color: #333333; background-color: #F5F5F5; -webkit-overflow-scrolling: none; }
+
+/* line 25, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+.wf-loading body { font-family: "Arial", "Helvetica", sans-serif; }
+
+/* line 28, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+.wf-active body { font-family: "Roboto", "Arial", "Helvetica", sans-serif; }
+
+/* line 31, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+h1, h2, h3, h4, h5, h6 { padding: 1rem 0 0; margin: 0; font-style: normal; font-weight: normal; }
+
+/* line 42, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+ul, ol { padding: 0; margin: 0 0 2rem; }
+/* line 45, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+ul li, ol li { margin-left: 2rem; }
+
+/* line 48, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+a { color: inherit; text-decoration: none; background: transparent; outline: 0; }
+/* line 53, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+a:hover { opacity: 0.8; }
+
+/* line 56, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+a:active, a:hover { outline: 0; }
+
+/* line 60, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+img { display: block; height: auto; max-width: 100%; padding: 0; margin: 0; line-height: 0; border: 0; }
+
+/* line 69, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+.img--inline { display: inline-block; }
+
+/* line 72, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+figure { padding: 0; margin: 0; }
+
+/* line 76, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+
+/* line 90, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
+
+/* line 97, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+audio:not([controls]) { display: none; height: 0; }
+
+/* line 101, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+[hidden], template { display: none; }
+
+/* line 105, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+abbr[title] { border-bottom: 1px dotted #999999; }
+
+/* line 108, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+b, strong { font-weight: 700; }
+
+/* line 112, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+dfn { font-style: italic; }
+
+/* line 115, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+small { font-size: 75%; }
+
+/* line 118, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+sub, sup { position: relative; font-size: 75%; line-height: 0; vertical-align: baseline; }
+
+/* line 125, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+sub { top: -0.5em; }
+
+/* line 128, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+sup { bottom: -0.25em; }
+
+/* line 131, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+svg:not(:root) { overflow: hidden; }
+
+/* line 134, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+hr { height: 0; margin: 1rem 0 1rem; border: 0; border-bottom: 1px solid; -moz-box-sizing: content-box; box-sizing: content-box; }
+
+/* line 141, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+pre { overflow: auto; }
+
+/* line 144, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 0.75rem; }
+
+/* line 151, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 155, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+td, th { padding: 0; }
+
+/* line 159, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+button { padding: 0; margin: 0; font: inherit; line-height: inherit; color: inherit; text-decoration: none; text-indent: 0; cursor: pointer; background: none; border: 0; }
+/* line 170, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+button:hover { opacity: 0.8; }
+/* line 172, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+button:focus { outline: 0; }
+
+/* line 174, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_base.sass */
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_helper.sass */
+.body-header, .body-master, .body-detail, .page, .page-header, .page-body, .nav-c, .btn--imageOptions, .addContact-import, .addContact-edit { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+/* line 8, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_helper.sass */
+.row { zoom: 1; }
+/* line 10, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_helper.sass */
+.row:before, .row:after { content: " "; display: table; }
+/* line 14, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_helper.sass */
+.row:after { clear: both; }
+
+/* line 22, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_helper.sass */
+.row--oneliner .row-body-primary, .row--oneliner .row-body-secondary { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* line 27, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_helper.sass */
+.dropdown-menu-list { display: block; padding: 0; margin: 0; list-style-type: none; }
+
+/* line 33, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_helper.sass */
+.dropdown-menu-list li { display: block; margin: 0; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_body.sass */
+.body-container { position: relative; min-width: 960px; max-width: 1600px; height: 100%; margin: auto; }
+
+/* line 8, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_body.sass */
+.body-header { bottom: auto; height: 3rem; background-color: white; box-shadow: 0 2px 0 0 #EDEDED; font-family: "Arial", "Helvetica", sans-serif; text-transform: uppercase; color: #999999; z-index: 103; }
+
+/* line 19, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_body.sass */
+.wf-loading .body-header { font-family: "Arial", "Helvetica", sans-serif; }
+
+/* line 22, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_body.sass */
+.wf-active .body-header { font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif; }
+
+/* line 25, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_body.sass */
+.body-master { right: auto; width: 50%; background-color: white; box-shadow: 2px 0 0 0 #EDEDED; z-index: 102; }
+
+/* line 33, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_body.sass */
+.body-detail { left: 50%; z-index: 101; }
+
+/* line 38, /Users/Vadim/Documents/work-crm/static v3/assets/sass/core/_body.sass */
+.body-master, .body-detail { top: 3rem; overflow: hidden; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_icon.sass */
+.icon { position: relative; display: inline-block; width: 1.5rem; height: 1.5rem; vertical-align: top; pointer-events: none; }
+/* line 8, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_icon.sass */
+.icon svg { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; color: inherit; }
+
+/* line 17, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_icon.sass */
+.icon--logotype { width: 2.125rem; height: 3rem; vertical-align: top; }
+
+/* line 22, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_icon.sass */
+.icon-userpic { width: 1.5rem; height: 1.5rem; overflow: hidden; border-radius: 50%; background-color: #EDEDED; display: inline-block; vertical-align: top; margin-top: 0.25rem; }
+
+/* line 32, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_icon.sass */
+.icon--remove { color: #D0021B; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_svg.sass */
+.svg-currentColor { fill: currentColor; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_space.sass */
+.space-vertical { height: 2rem; }
+
+/* line 4, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_space.sass */
+.space-vertical--compact { height: 1rem; }
+
+/* line 7, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_space.sass */
+.space-verticalBorder { height: 0.5rem; width: 100%; margin-bottom: 0.5rem; border-bottom: 1px solid #EDEDED; }
+
+/* line 4, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-header { bottom: auto; padding: 0 1.5rem; height: 8rem; }
+
+/* line 10, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-header-filter { border: 1px solid #EDEDED; border-radius: 4px; background-color: white; margin: 0 0.5rem; }
+
+/* line 16, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-header-controls { margin: 0 0.5rem; }
+
+/* line 19, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-body { padding: 0 2rem; top: 8rem; overflow-y: auto; }
+
+/* line 26, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page--compact .page-header { height: 3.25rem; }
+/* line 28, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page--compact .page-body { top: 3.25rem; }
+
+/* line 31, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-breadcrumbs { color: #999999; padding: 0.5rem 0; margin: 0; list-style-type: none; font-size: 0.75rem; }
+/* line 37, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-breadcrumbs li { display: inline-block; vertical-align: top; padding: 0; margin: 0; }
+/* line 43, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-breadcrumbs li:last-child .page-breadcrumbs-link { border-right: 0; }
+
+/* line 45, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-breadcrumbs-link { display: inline-block; border-right: 1px solid #EDEDED; line-height: 1rem; padding: 0 0.5rem; text-transform: lowercase; }
+/* line 51, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_page.sass */
+.page-breadcrumbs-link.active { border-right: 0; color: #379BFF; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav { padding: 0 1.5rem; }
+
+/* line 3, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-link { display: inline-block; vertical-align: top; padding: 0.25rem 0.5rem 0; line-height: 2.75rem; }
+/* line 8, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-link.active { color: #333333; }
+/* line 10, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-link .row-body--inverted { padding-right: 0; }
+/* line 12, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-link .row-body--inverted .row-body-secondary { text-align: center; width: 1.5rem; }
+/* line 15, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-link .row-body--inverted .row-body-primary { margin-right: 1.5rem; }
+/* line 17, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-link .icon-userpic { margin-top: 0.5rem; }
+/* line 19, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-link .icon { height: 2.75rem; }
+
+/* line 22, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-link--logotype { padding: 0; color: #333333; }
+
+/* line 26, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-a, .nav-b { display: inline-block; width: 50%; vertical-align: top; }
+
+/* line 32, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-b { text-align: right; }
+
+/* line 35, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-c { left: 50%; right: auto; bottom: auto; -webkit-transform: translate3d(-50%, 0, 0); transform: translate3d(-50%, 0, 0); }
+
+/* line 42, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-btn { margin: 0.5rem 0; vertical-align: top; background-color: #F5F5F5; border-radius: 4px; color: #333333; }
+/* line 48, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_nav.sass */
+.nav-btn .icon { color: #35A66F; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row, .row-icon, .row-body, .row-body-primary, .row-body-secondary { display: block; }
+
+/* line 10, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-icon { float: left; text-align: center; width: 2rem; height: 2rem; color: #999999; }
+/* line 16, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-icon .icon { height: 2rem; }
+/* line 18, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.new .row-icon { color: #379BFF; }
+
+/* line 20, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-body { overflow: hidden; padding-right: 0.5rem; }
+
+/* line 23, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-body--aligned { padding-left: 0.25rem; }
+
+/* line 27, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-body-primary { float: left; padding-right: 0.5rem; }
+
+/* line 30, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-body-secondary { overflow: hidden; text-align: right; }
+
+/* line 35, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row--oneliner .row-body-primary { max-width: 60%; }
+
+/* line 41, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row--link { border-bottom: 1px solid #EDEDED; }
+/* line 43, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row--link:hover { background-color: #F5F5F5; }
+/* line 46, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row--link.active .row-body-primary { color: #379BFF; }
+/* line 48, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row--link .row-body-secondary { color: #999999; }
+
+/* line 52, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.page-header-filter { line-height: 2.5rem; }
+/* line 54, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.page-header-filter .row-icon { height: 2.5rem; }
+/* line 56, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.page-header-filter .icon { color: #999999; height: 2.5rem; }
+
+/* line 60, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-body--inverted .row-body-secondary { width: 2rem; float: right; }
+/* line 63, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-body--inverted .row-body-primary { float: none; padding: 0; margin-right: 2rem; }
+
+/* line 68, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_row.sass */
+.row-body-message { line-height: 1.25rem; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-filter { font-size: 0.875rem; padding: 0; display: block; width: 100%; margin: 0; padding: 0; line-height: 1.5rem; padding: 0.5rem 0; border: 0; }
+/* line 11, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-filter:focus { outline: 0; }
+
+/* line 14, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+input[type="checkbox"] { display: none; }
+/* line 16, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+input[type="checkbox"] + .checkbox-icon { color: #999999; }
+/* line 19, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+input[type="checkbox"] + .checkbox-icon .icon--checkbox-checked { display: none; }
+/* line 21, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+input[type="checkbox"]:checked + .checkbox-icon { color: #379BFF; }
+/* line 23, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+input[type="checkbox"]:checked + .checkbox-icon .icon--checkbox { display: none; }
+/* line 25, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+input[type="checkbox"]:checked + .checkbox-icon .icon--checkbox-checked { display: inline-block; }
+
+/* line 29, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-div { display: inline-block; border: 1px solid transparent; padding: 0 0.25rem; border-radius: 4px; max-width: 12rem; overflow: hidden; white-space: nowrap; line-height: 1.5rem; }
+/* line 38, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-div:focus { border-color: #EDEDED; outline: 0; }
+
+/* line 42, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-div--area { white-space: normal; max-width: 100%; }
+
+/* line 46, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-div--strong { font-size: 1rem; font-weight: bold; }
+
+/* line 50, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-checkboxCompact { font-size: 0.75rem; color: #999999; line-height: 1.5rem; }
+/* line 54, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-checkboxCompact .row-icon { width: 1.5rem; height: 1.5rem; }
+/* line 57, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-checkboxCompact .checkbox-icon { width: 1.5rem; }
+/* line 59, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_input.sass */
+.input-checkboxCompact .checkbox-icon .icon { height: 1.5rem; width: 1rem; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_label.sass */
+label { display: inline-block; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+/* line 5, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_label.sass */
+label:hover { opacity: 0.8; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_stream.sass */
+.stream-item { border: 1px solid #EDEDED; border-radius: 4px; background-color: white; margin: 0.5rem 0; padding: 0.25rem; }
+/* line 7, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_stream.sass */
+.stream-item .row { border-bottom: 1px solid #EDEDED; }
+/* line 9, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_stream.sass */
+.stream-item.new { border-color: #379BFF; }
+
+/* line 12, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_stream.sass */
+.stream-item-extra { padding: 0 0.5rem 0.5rem 0; }
+/* line 17, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_stream.sass */
+.stream-item-extra.row { border-bottom: 0; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.wf-loading .dropdown-menu { font-family: "Arial", "Helvetica", sans-serif; }
+
+/* line 4, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.wf-active .dropdown-menu { font-family: "Roboto", "Arial", "Helvetica", sans-serif; text-transform: none; }
+
+/* line 8, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown { position: relative; }
+
+/* line 11, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown--inline { display: inline-block; }
+
+/* line 14, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown-toggle { display: block; }
+
+/* line 17, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown-menu { color: #333333; position: absolute; top: 100%; display: none; min-width: 10rem; padding: 0; text-align: left; background-color: white; border-radius: 4px; opacity: 0; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1), 0px 16px 24px 0px rgba(0, 0, 0, 0.1); background-clip: padding-box; }
+/* line 30, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown.open > .dropdown-menu { display: block; opacity: 1; z-index: 1000; }
+
+/* line 34, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown-menu-body { border-radius: 4px; overflow: hidden; }
+
+/* line 39, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown--left .dropdown-menu { left: 0; }
+
+/* line 43, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown--right .dropdown-menu { right: 0; }
+
+/* line 51, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown-menu-link { width: 100%; display: block; padding: 0 0.5rem; color: #999999; text-align: left; }
+/* line 57, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown-menu-link:hover { background-color: #F5F5F5; }
+
+/* line 61, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown-menu-item-link--active { color: #333333; }
+
+/* line 66, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.dropdown--imageOptions .dropdown-menu { top: 2rem; }
+
+/* line 68, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.btn--imageOptions { left: auto; bottom: auto; color: #999999; background-color: #EDEDED; width: 2rem; }
+/* line 75, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_dropdown.sass */
+.btn--imageOptions .icon { height: 2rem; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_btn.sass */
+.btn--import { border-radius: 4px; background-color: #379BFF; color: white; }
+/* line 5, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_btn.sass */
+.btn--import .icon { color: white; }
+
+/* line 8, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_btn.sass */
+.btn--save { border-radius: 4px; background-color: #35A66F; color: white; padding: 0 1rem; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_inputLine.sass */
+.inputLine-caption { color: #999999; font-size: 0.75rem; line-height: 1.5rem; }
+
+/* line 6, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_inputLine.sass */
+.inputLine-image { height: 4rem; background-color: #F5F5F5; text-align: center; margin-bottom: 1rem; }
+
+/* line 12, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_inputLine.sass */
+.inputLine-negativeTrail { line-height: 1.5rem; margin-bottom: -0.25rem; }
+
+/* line 16, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_inputLine.sass */
+.inputLine-div { line-height: 1.5rem; }
+
+/* line 19, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_inputLine.sass */
+.inputLine--vcardRow { padding-bottom: 0.25rem; }
+/* line 21, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_inputLine.sass */
+.inputLine--vcardRow .row-icon, .inputLine--vcardRow .row-icon .icon, .inputLine--vcardRow .row-icon button { height: 1.5rem; }
+
+/* line 3, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+.select { position: relative; display: inline-block; border: 0; color: #379BFF; }
+
+/* This is the native select, we're making everything but the text invisible so we can see the button styles in the wrapper */
+/* line 11, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+.select select { padding-right: 1rem; width: 100%; margin: 0; background-color: transparent; background: none; border: 0; outline: none; -moz-box-sizing: border-box; box-sizing: border-box; appearance: none; -webkit-appearance: none; font-size: 0.75rem; font-family: inherit; color: #379BFF; line-height: 1.5rem; }
+
+/* line 27, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+.select::after { content: ""; position: absolute; width: 1rem; height: 1.5rem; top: 0; right: 0; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48cGF0aCBkPSJNOSA0LjEybDIuMzggMi4zOCAxLjA2LTEuMDYtMy40NC0zLjQ0LTMuNDQgMy40NCAxLjA2IDEuMDYgMi4zOC0yLjM4em0wIDkuNzZsLTIuMzgtMi4zOC0xLjA2IDEuMDYgMy40NCAzLjQ0IDMuNDQtMy40NC0xLjA2LTEuMDYtMi4zOCAyLjM4eiIgZmlsbD0iIzM3OUJGRiIvPjwvc3ZnPg==); background-repeat: no-repeat; background-size: contain; background-position: center center; z-index: 2; /* This hack make the select behind the arrow clickable in some browsers */ pointer-events: none; }
+
+/* Hover style */
+/* line 44, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+.select:hover { border: 0; }
+
+/* Focus style */
+/* line 48, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+.select select:focus { outline: none; box-shadow: none; background-color: transparent; color: #379BFF; border: 0; }
+
+/* Set options to normal weight */
+/* line 56, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+.select option { font-weight: normal; }
+
+/* ------------------------------------ */
+/* START OF UGLY BROWSER-SPECIFIC HACKS */
+/* ------------------------------------ */
+/* OPERA - Pre-Blink nix the custom arrow, go with a native select button to keep it simple. Targeted via this hack http://browserhacks.com/#hack-a3f166304aafed524566bc6814e1d5c7 */
+/* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance, IE 9 and earlier get a native select - targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
+/* The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the focus style's - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { /* line 75, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+  .select select::-ms-expand { display: none; }
+  /* line 78, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+  .select select:focus::-ms-value { background: transparent; color: #333333; } }
+/* Show only the native arrow */
+@-moz-document url-prefix() { /* line 87, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+  .select { overflow: hidden; }
+  /* line 90, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+  .select select { width: 120%; width: calc(100% + em); } }
+/* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */
+/* line 98, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_select.sass */
+.select select:-moz-focusring { color: transparent; text-shadow: 0 0 0 #000; }
+
+/* ---------------------------------- */
+/* END OF UGLY BROWSER-SPECIFIC HACKS */
+/* ---------------------------------- */
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_addContact.sass */
+.addContact { width: 30rem; height: 100%; }
+
+/* line 5, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_addContact.sass */
+.addContact-import { height: 5rem; bottom: auto; text-align: center; padding: 1rem 0.5rem 0.5rem; border-bottom: 1px solid #EDEDED; z-index: 1; }
+
+/* line 14, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_addContact.sass */
+.addContact-edit { top: 5rem; padding: 1rem; overflow-y: auto; }
+
+/* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_text.sass */
+.text-secondary { color: #999999; }
+
+/* line 4, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_text.sass */
+.text-caption { font-size: 0.75rem; }
+
+/* line 7, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_text.sass */
+.text-right { text-align: right; }
+
