@@ -1,0 +1,319 @@
+<div class="dropdown dropdown--inline dropdown--right" data-verticalfit=".body-master">
+
+  <button class="nav-btn" data-toggle="dropdown" type="button">
+    <div class="row-body">
+      <div class="row-icon">
+        {% include "_icon" with "add" %}
+      </div>
+      <div class="row-body">
+        Новый контакт / импорт
+      </div>
+    </div>
+  </button>
+
+  <div class="dropdown-menu">
+
+    <div class="addContact">
+      <div class="addContact-import">
+        <input type="file" hidden>
+        <button type="button" class="btn btn--import">
+          <div class="row-body">
+            <div class="row-icon">
+              {% include "_icon" with "upload" %}
+            </div>
+            <div class="row-body">
+              Импорт
+            </div>
+          </div>
+        </button>
+        <div class="inputLine-caption">
+          Поддерживаемые форматы: ..., ...
+        </div>
+      </div>
+
+      <div class="addContact-edit">
+        <strong>Заполнить вручную</strong>
+        <div class="inputLine">
+          <figure class="inputLine-image">
+            <div class="dropdown dropdown--right dropdown--imageOptions">
+              <button class="btn--imageOptions" type="button" data-toggle="dropdown">
+                {% include "_icon" with "image" %}
+              </button>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu-list">
+                  <li>
+                    <button class="dropdown-menu-link" type="button">
+                      Загрузить изображение
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-menu-link" type="button">
+                      Удалить
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <div class="inputLine">
+          <div class="row">
+            <div class="row-icon"></div>
+            <div class="row-body">
+              <div class="inputLine-negativeTrail">
+                <div class="input-div input-div--strong" contenteditable data-placeholder="Имя">
+                  Yo
+                </div><div class="input-div input-div--strong" contenteditable data-placeholder="Фамилия">
+                Yo
+              </div>
+            </div>
+            <div class="inputLine-negativeTrail">
+              <div class="input-div text-secondary" contenteditable data-placeholder="Компания">Yo</div>
+            </div>
+
+            <label class="row input-checkboxCompact">
+              <div class="row-icon">
+                <input type="checkbox" checked>
+                <div class="checkbox-icon">
+                  {% include "_icon" with "checkbox-checked" %}
+                  {% include "_icon" with "checkbox" %}
+                </div>
+              </div>
+              <div class="row-body">
+                Компания
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-vertical space-vertical--compact"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+            <button type="button">
+              {% include "_icon" with "remove" %}
+            </button>
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">mobile</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                +7 777 7777777
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">mobile</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                Телефон
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">work</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                Email
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">website</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                URL
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail">
+              <label class="text-caption text-secondary row-body--aligned">
+                День рождения
+              </label>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                День/Месяц/Год
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="row-body-primary">
+              <div class="inputLine-negativeTrail row-body--aligned">
+                <div class="select">
+                  <select>
+                    <option value="">Работа</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="Street">Улица</div>
+              </div>
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="City">City</div>
+                <div class="input-div" contenteditable data-placeholder="Postal district">Postal district</div>
+              </div>
+
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="Street">Province</div>
+              </div>
+
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="Street">Country</div>
+              </div>
+
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="Postal code">Postal code</div>
+              </div>
+
+            </div>
+            <div class="row-body-secondary inputLine-negativeTrail">
+              <a href="#">Формат адреса</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">Custom</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Custom field">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <label class="text-caption text-secondary row-body--aligned">
+                Заметка
+              </label>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div input-div--area" contenteditable data-placeholder="Custom field">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine text-right">
+        <button class="btn btn--save" type="button">Сохранить</button>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div><div class="dropdown dropdown--inline dropdown--right">
+<a href="#" class="nav-link" data-toggle="dropdown">
+  <div class="row-body row-body--inverted">
+    <div class="row-body-secondary">
+      {% include "_icon" with "arrow-down" %}
+    </div>
+    <div class="row-body-primary">
+      <figure class="icon-userpic"></figure>
+      Санжар
+    </div>
+  </div>
+</a>
+<div class="dropdown-menu">
+  Tralalala
+</div>
+</div>

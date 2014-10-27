@@ -1,0 +1,244 @@
+{% block title %}
+  Contacts | Recents &mdash; Almanet
+{% endblock %}
+
+{% block body %}
+
+<div class="body-header nav">
+  <div class="nav-a">
+    <a href="/" class="nav-link active">
+      Контакты
+    </a><a href="#" class="nav-link">
+      События
+    </a><a href="#" class="nav-link">
+      Продукты
+    </a><a href="#" class="nav-link">
+      Поиск
+    </a><a href="#" class="nav-link">
+      Отчеты
+    </a>
+  </div><div class="nav-b">
+
+    {% include "_addContact" %}
+
+  </div><div class="nav-c">
+    <a href="/" class="nav-link nav-link--logotype">
+      {% include "_icon" with "logotype" %}
+    </a>
+  </div>
+
+</div>
+
+<div class="body-master">
+  <div class="page page--compact">
+    <div class="page-header">
+      <ul class="page-breadcrumbs">
+        <li><a href="/" class="page-breadcrumbs-link active">контакты</a></li>
+      </ul>
+    </div>
+    <div class="page-body">
+        <a href="/" class="row row--oneliner row--link new">
+          <div class="row-icon">
+            {% include "_icon" with "inbox" %}
+          </div>
+          <div class="row-body">
+            <div class="row-body-primary">
+              Входящие
+            </div>
+            <div class="row-body-secondary">
+              xx
+            </div>
+          </div>
+        </a>
+
+        <a href="/contacts/all" class="row row--oneliner row--link">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="row-body-primary">
+              Все
+            </div>
+            <div class="row-body-secondary">
+              xx
+            </div>
+          </div>
+        </a>
+
+
+
+        <a href="/contacts/recents" class="row row--oneliner row--link active">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="row-body-primary">
+              Недавние
+            </div>
+            <div class="row-body-secondary">
+              xx
+            </div>
+          </div>
+        </a>
+
+        <a href="/contacts/dealing" class="row row--oneliner row--link">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="row-body-primary">
+              Контакты в обработке
+            </div>
+            <div class="row-body-secondary">
+              xx
+            </div>
+          </div>
+        </a>
+
+        <a href="/contacts/cold" class="row row--oneliner row--link">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="row-body-primary">
+              Холодная база
+            </div>
+            <div class="row-body-secondary">
+              xx
+            </div>
+          </div>
+        </a>
+
+        <div class="space-vertical"></div>
+
+        <div class="row row--oneliner">
+          <div class="row-body">
+            <a href="#" class="row-body-primary">
+              <div class="row-icon">
+                {% include "_icon" with "add" %}
+              </div>
+              <div class="row-body">
+                <strong>Новый фильтр</strong>
+              </div>
+            </a>
+            <div class="row-body-secondary">
+              <a href="#" class="text-secondary">Редактировать</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="row row--oneliner row--link">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="row-body-primary">
+              Контакты по Алмате
+            </div>
+            <div class="row-body-secondary">
+              xx
+            </div>
+          </div>
+        </a>
+
+        <div class="space-vertical"></div>
+
+        <div class="row row--oneliner">
+          <div class="row-body">
+            <a href="#" class="row-body-primary">
+              <div class="row-icon">
+                {% include "_icon" with "add" %}
+              </div>
+              <div class="row-body">
+                <strong>Новый список</strong>
+              </div>
+            </a>
+            <div class="row-body-secondary">
+              <!-- <a href="#" class="text-secondary">Редактировать</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="body-detail">
+  <div class="page">
+    <div class="page-header">
+      <ul class="page-breadcrumbs">
+        <li><a href="/" class="page-breadcrumbs-link">Входящие</a></li>
+      </ul>
+      <div class="page-header-filterContainer">
+        <div class="page-header-filter row">
+          <div class="row-icon">
+            {% include "_icon" with "search" %}
+          </div>
+          <div class="row-body row-body--inverted">
+            <div class="row-body-secondary">
+              {% include "_icon" with "arrow-down" %}
+            </div>
+            <div class="row-body-primary">
+              <input type="text" class="input-filter" placeholder="Фильтр">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="page-header-controls row">
+        <div class="row-body-primary">
+          <label class="text-secondary">
+            <div class="row-icon">
+              <input type="checkbox">
+              <div class="checkbox-icon">
+                {% include "_icon" with "checkbox-checked" %}
+                {% include "_icon" with "checkbox" %}
+              </div>
+            </div>
+            <div class="row-body">
+              Выбрать всё
+            </div>
+          </label>
+          <a href="#" class="row--inline text-secondary">
+            <div class="row-icon">
+              {% include "_icon" with "share" %}
+            </div>
+            <div class="row-body">
+              Поделиться
+            </div>
+          </a>
+        </div>
+        <div class="row-body-secondary">
+          <a href="#" class="text-secondary">Редактировать список</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="page-body">
+      <div class="row row--oneliner row--letter">
+        <div class="row-icon">
+          A
+        </div>
+      </div>
+
+      <label class="row row--oneliner">
+        <div class="row-icon">
+          <input type="checkbox" checked>
+          <div class="checkbox-icon">
+            {% include "_icon" with "checkbox-checked" %}
+            {% include "_icon" with "checkbox" %}
+          </div>
+        </div>
+        <div class="row-body">
+          Somename
+        </div>
+      </label>
+
+      <label class="row row--oneliner">
+        <div class="row-icon">
+          <input type="checkbox" checked>
+          <div class="checkbox-icon">
+            {% include "_icon" with "checkbox-checked" %}
+            {% include "_icon" with "checkbox" %}
+          </div>
+        </div>
+        <div class="row-body">
+          Somename
+        </div>
+      </label>
+
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

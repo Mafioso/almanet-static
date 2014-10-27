@@ -4,15 +4,38 @@
   background-color: $white
   margin: .5rem 0
   padding: .25rem
-  .row
-    border-bottom: 1px solid $neutral
   &.new
     border-color: $accent
 
 .stream-item-extra
+  border-top: 1px solid $neutral-dark
   padding: 0 .5rem .5rem 0
   // .row-body
     // padding-top: .5rem
     // line-height: 1rem
   &.row
     border-bottom: 0
+
+.stream-breadcrumbs
+  color: $secondary
+  padding: .5rem 0
+  margin: 0
+  list-style-type: none
+  font-size: $caption
+  li
+    display: inline-block
+    vertical-align: top
+    padding: 0
+    margin: 0
+    &:last-child
+      .stream-breadcrumbs-link
+        border-right: 0
+.stream-breadcrumbs-link
+  display: inline-block
+  border-right: 1px solid $neutral
+  line-height: 1rem
+  padding: 0 .5rem
+  text-transform: lowercase
+  &.active
+    border-right: 0
+    color: $accent

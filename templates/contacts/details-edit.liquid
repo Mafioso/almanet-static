@@ -1,0 +1,473 @@
+{% block title %}
+Contacts | All &mdash; Almanet
+{% endblock %}
+
+{% block body %}
+
+<div class="body-header nav">
+  <div class="nav-a">
+    <a href="/" class="nav-link active">
+      Контакты
+    </a><a href="#" class="nav-link">
+      События
+    </a><a href="#" class="nav-link">
+      Продукты
+    </a><a href="#" class="nav-link">
+      Поиск
+    </a><a href="#" class="nav-link">
+      Отчеты
+    </a>
+  </div><div class="nav-b">
+
+    {% include "_addContact" %}
+
+  </div><div class="nav-c">
+    <a href="/" class="nav-link nav-link--logotype">
+      {% include "_icon" with "logotype" %}
+    </a>
+  </div>
+</div>
+
+
+<div class="body-master">
+  <div class="page page--compact">
+    <div class="page-header">
+      <ul class="page-breadcrumbs">
+        <li><a href="/" class="page-breadcrumbs-link">контакты</a></li>
+        <li><a href="/" class="page-breadcrumbs-link">холодная база</a></li>
+        <li><a href="/" class="page-breadcrumbs-link active">РБК Банк</a></li>
+      </ul>
+    </div>
+    <div class="page-body">
+      <div class="dropdown dropdown">
+        <button type="button" class="row row--oneliner row--link" data-toggle="dropdown">
+          <div class="row-icon">
+            {% include "_icon" with "more" %}
+          </div>
+          <div class="row-body">
+            Опции
+          </div>
+        </button>
+        <div class="dropdown-menu">
+          <a href="/" class="row row--oneliner row--link">
+            <div class="row-icon text-good">
+              {% include "_icon" with "add" %}
+            </div>
+            <div class="row-body">
+              Добавить событие
+            </div>
+          </a>
+          <a href="/" class="row row--oneliner row--link">
+            <div class="row-icon">
+              {% include "_icon" with "share" %}
+            </div>
+            <div class="row-body">
+              Поделиться
+            </div>
+          </a>
+          <a href="/" class="row row--oneliner row--link">
+            <div class="row-icon">
+              {% include "_icon" with "listAdd" %}
+            </div>
+            <div class="row-body">
+              Добавить в список
+            </div>
+          </a>
+          <a href="/" class="row row--oneliner row--link last">
+            <div class="row-icon">
+              {% include "_icon" with "edit" %}
+            </div>
+            <div class="row-body">
+              Редактировать
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="space-vertical"></div>
+
+      <div class="contact">
+        <div class="inputLine">
+          <figure class="inputLine-image">
+            <div class="dropdown dropdown--right dropdown--imageOptions">
+              <button class="btn--imageOptions" type="button" data-toggle="dropdown">
+                {% include "_icon" with "image" %}
+              </button>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu-list">
+                  <li>
+                    <button class="dropdown-menu-link" type="button">
+                      Загрузить изображение
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-menu-link" type="button">
+                      Удалить
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <div class="inputLine">
+          <div class="row">
+            <div class="row-icon"></div>
+            <div class="row-body">
+              <div class="inputLine-negativeTrail">
+                <div class="input-div input-div--strong" contenteditable data-placeholder="Имя">
+                  Yo
+                </div><div class="input-div input-div--strong" contenteditable data-placeholder="Фамилия">
+                Yo
+              </div>
+            </div>
+            <div class="inputLine-negativeTrail">
+              <div class="input-div text-secondary" contenteditable data-placeholder="Компания">Yo</div>
+            </div>
+
+            <label class="row input-checkboxCompact">
+              <div class="row-icon">
+                <input type="checkbox" checked>
+                <div class="checkbox-icon">
+                  {% include "_icon" with "checkbox-checked" %}
+                  {% include "_icon" with "checkbox" %}
+                </div>
+              </div>
+              <div class="row-body">
+                Компания
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-vertical space-vertical--compact"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+            <button type="button">
+              {% include "_icon" with "remove" %}
+            </button>
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">mobile</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                +7 777 7777777
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">mobile</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                Телефон
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">work</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                Email
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">website</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                URL
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail">
+              <label class="text-caption text-secondary row-body--aligned">
+                День рождения
+              </label>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Телефон">
+                День/Месяц/Год
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon"></div>
+          <div class="row-body">
+            <div class="row-body-primary">
+              <div class="inputLine-negativeTrail row-body--aligned">
+                <div class="select">
+                  <select>
+                    <option value="">Работа</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="Street">Улица</div>
+              </div>
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="City">City</div>
+                <div class="input-div" contenteditable data-placeholder="Postal district">Postal district</div>
+              </div>
+
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="Street">Province</div>
+              </div>
+
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="Street">Country</div>
+              </div>
+
+              <div class="inputLine-div">
+                <div class="input-div" contenteditable data-placeholder="Postal code">Postal code</div>
+              </div>
+
+            </div>
+            <div class="row-body-secondary inputLine-negativeTrail">
+              <a href="#">Формат адреса</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <div class="select">
+                <select>
+                  <option value="">Custom</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div" contenteditable data-placeholder="Custom field">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="inputLine inputLine--vcardRow">
+        <div class="row">
+          <div class="row-icon">
+          </div>
+          <div class="row-body">
+            <div class="inputLine-negativeTrail row-body--aligned">
+              <label class="text-caption text-secondary row-body--aligned">
+                Заметка
+              </label>
+            </div>
+            <div class="inputLine-div">
+              <div class="input-div input-div--area" contenteditable data-placeholder="Custom field">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div><div class="contact-aside">
+        <a href="#" class="text-bad">Удалить</a>
+        <a href="#" class="text-good text-padLeft">Сохранить</a>
+      </div>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="text-strong text-large">Продукты</div>
+
+      <a href="/" class="text-secondary">DEPOSITUM (вклады)</a>
+
+      <div class="space-verticalBorder"></div>
+
+      <div class="text-strong text-large">Подписчики</div>
+
+      <a href="/" class="link-inline" title="Username">
+        <figure class="icon-userpic"></figure>
+      </a>
+      <a href="/" class="link-inline" title="Username">
+        <figure class="icon-userpic"></figure>
+      </a>
+
+      <div class="space-vertical"></div>
+
+    </div>
+  </div>
+</div>
+
+<div class="body-detail">
+  <div class="page">
+    <div class="page-header">
+      <ul class="page-breadcrumbs">
+        <li><div class="page-breadcrumbs-link">события</div></li>
+      </ul>
+      <div class="page-header-filterContainer">
+        <div class="page-header-filter row">
+          <div class="row-body row-body--inverted">
+            <div class="row-body-secondary">
+              {% include "_icon" with "arrow-down" %}
+            </div>
+            <div class="row-body-primary row-body-primary--extraOffset">
+              <strong>Все события</strong>
+              <span class="text-caption text-secondary">(выберите цикл продаж)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-header-controls">
+        <a href="/" class="row row--oneliner row--link">
+          <div class="row-icon text-good">
+            {% include "_icon" with "add" %}
+          </div>
+          <div class="row-body">
+            Добавить событие
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="page-body">
+      <div class="stream-item">
+        <div class="row">
+          <div class="row-icon">
+            [i]
+          </div>
+          <div class="row-body row-body--no-trailer">
+            <div class="row">
+              <a href="#" class="row-icon">
+                <figure class="icon-userpic"></figure>
+              </a>
+              <div class="row-body">
+                <div class="row">
+                  <div class="row-body-primary text-caption text-secondary">
+                    <a href="#" class="text-secondary">Абиш</a> в 10:06, 7 окт 14
+                  </div>
+                  <div class="row-body-secondary">
+                    <a href="#" class="link-inline">
+                      [c]
+                    </a>
+                  </div>
+                </div>
+                <div class="row-body-message">
+                  Назначена встреча с Генеральным директором, через Директора по общим вопросам <a href="#" class="link-tag">#meeting</a>
+                </div>
+                <ul class="stream-breadcrumbs">
+                  <li><a href="#" class="stream-breadcrumbs">РБК Банк</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stream-item">
+        <div class="row">
+          <div class="row-icon">
+            [i]
+          </div>
+          <div class="row-body row-body--no-trailer">
+            <div class="row">
+              <a href="#" class="row-icon">
+                <figure class="icon-userpic"></figure>
+              </a>
+              <div class="row-body">
+                <div class="row">
+                  <div class="row-body-primary text-caption text-secondary">
+                    <a href="#" class="text-secondary">Абиш</a> в 10:06, 7 окт 14
+                  </div>
+                  <div class="row-body-secondary">
+                    <a href="#" class="link-inline">
+                      [c]
+                    </a>
+                  </div>
+                </div>
+                <div class="row-body-message">
+                  Проведена встреча с Генеральным директором, была показана презентация документооборота
+                </div>
+                <ul class="stream-breadcrumbs">
+                  <li><a href="#" class="stream-breadcrumbs">РБК Банк</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

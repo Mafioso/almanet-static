@@ -7,6 +7,11 @@
 
 .row
   @extend %helper-clearfix
+  display: block
+  width: 100%
+  text-align: left
+.row--inline
+  display: inline-block
 .row-icon
   float: left
   text-align: center
@@ -20,6 +25,8 @@
 .row-body
   overflow: hidden
   padding-right: .5rem
+.row-body--no-trailer
+  padding-right: 0
 .row-body--aligned
   padding-left: .25rem
 
@@ -27,6 +34,7 @@
 .row-body-primary
   float: left
   padding-right: .5rem
+
 .row-body-secondary
   overflow: hidden
   text-align: right
@@ -39,7 +47,7 @@
     @extend %helper-oneliner
 
 .row--link
-  border-bottom: 1px solid $neutral
+  border-bottom: 1px solid $neutral-dark
   &:hover
     background-color: $neutral-light
   &.active
@@ -47,6 +55,14 @@
       color: $accent
   .row-body-secondary
     color: $secondary
+  &.last
+    border-bottom: 0
+
+.row--letter
+  border-bottom: 1px solid $secondary
+  margin-bottom: .5rem
+  .row-icon
+    color: $primary
 
 
 .page-header-filter
@@ -64,7 +80,12 @@
     float: none
     padding: 0
     margin-right: 2rem
+  .row-body-primary--extraOffset
+    padding-left: .5rem
 
 .row-body-message
   // padding-top: .5rem
   line-height: 1.25rem
+
+.row-body-message-meta
+  padding: .25rem 0
