@@ -27,7 +27,7 @@
           </div>
         </button>
         <div class="inputLine-caption">
-          Поддерживаемые форматы: ..., ...
+          Поддерживаемые форматы: vCard
         </div>
       </div>
 
@@ -62,19 +62,19 @@
             <div class="row-icon"></div>
             <div class="row-body">
               <div class="inputLine-negativeTrail">
-                <div class="input-div input-div--strong" contenteditable data-placeholder="Имя">
-                  Yo
-                </div><div class="input-div input-div--strong" contenteditable data-placeholder="Фамилия">
-                Yo
+                <div class="input-div input-div--strong text-secondary" contenteditable data-placeholder="Имя">
+                  Имя
+                </div><div class="input-div input-div--strong text-secondary" contenteditable data-placeholder="Фамилия">
+                  Фамилия
               </div>
             </div>
             <div class="inputLine-negativeTrail">
-              <div class="input-div text-secondary" contenteditable data-placeholder="Компания">Yo</div>
+              <div class="input-div text-secondary" contenteditable data-placeholder="Компания">Компания</div>
             </div>
 
             <label class="row input-checkboxCompact">
               <div class="row-icon">
-                <input type="checkbox" checked>
+                <input type="checkbox">
                 <div class="checkbox-icon">
                   {% include "_icon" with "checkbox-checked" %}
                   {% include "_icon" with "checkbox" %}
@@ -93,41 +93,24 @@
       <div class="inputLine inputLine--vcardRow">
         <div class="row">
           <div class="row-icon">
-            <button type="button">
-              {% include "_icon" with "remove" %}
-            </button>
           </div>
           <div class="row-body">
             <div class="inputLine-negativeTrail row-body--aligned">
               <div class="select">
                 <select>
-                  <option value="">mobile</option>
+                  <option value="">мобильный</option>
+                  <option value="">домашний</option>
+                  <option value="">рабочий</option>
+                  <option value="">рабочий факс</option>
+                  <option value="">домашний факс</option>
+                  <option value="">другой факс</option>
+                  <option value="">другое</option>
+                  <option value="">настроить поле</option>
                 </select>
               </div>
             </div>
             <div class="inputLine-div">
-              <div class="input-div" contenteditable data-placeholder="Телефон">
-                +7 777 7777777
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="inputLine inputLine--vcardRow">
-        <div class="row">
-          <div class="row-icon">
-          </div>
-          <div class="row-body">
-            <div class="inputLine-negativeTrail row-body--aligned">
-              <div class="select">
-                <select>
-                  <option value="">mobile</option>
-                </select>
-              </div>
-            </div>
-            <div class="inputLine-div">
-              <div class="input-div" contenteditable data-placeholder="Телефон">
+              <div class="input-div text-secondary" contenteditable data-placeholder="Телефон">
                 Телефон
               </div>
             </div>
@@ -145,12 +128,14 @@
             <div class="inputLine-negativeTrail row-body--aligned">
               <div class="select">
                 <select>
-                  <option value="">work</option>
+                  <option value="">рабочий</option>
+                  <option value="">домашний</option>
+                  <option value="">другое</option>
                 </select>
               </div>
             </div>
             <div class="inputLine-div">
-              <div class="input-div" contenteditable data-placeholder="Телефон">
+              <div class="input-div text-secondary" contenteditable data-placeholder="Телефон">
                 Email
               </div>
             </div>
@@ -168,12 +153,12 @@
             <div class="inputLine-negativeTrail row-body--aligned">
               <div class="select">
                 <select>
-                  <option value="">website</option>
+                  <option value="">сайт</option>
                 </select>
               </div>
             </div>
             <div class="inputLine-div">
-              <div class="input-div" contenteditable data-placeholder="Телефон">
+              <div class="input-div text-secondary" contenteditable data-placeholder="Телефон">
                 URL
               </div>
             </div>
@@ -193,7 +178,7 @@
               </label>
             </div>
             <div class="inputLine-div">
-              <div class="input-div" contenteditable data-placeholder="Телефон">
+              <div class="input-div text-secondary" contenteditable data-placeholder="Телефон">
                 День/Месяц/Год
               </div>
             </div>
@@ -217,23 +202,19 @@
               </div>
 
               <div class="inputLine-div">
-                <div class="input-div" contenteditable data-placeholder="Street">Улица</div>
+                <div class="input-div text-secondary" contenteditable data-placeholder="Street">Улица</div>
               </div>
               <div class="inputLine-div">
-                <div class="input-div" contenteditable data-placeholder="City">City</div>
-                <div class="input-div" contenteditable data-placeholder="Postal district">Postal district</div>
-              </div>
-
-              <div class="inputLine-div">
-                <div class="input-div" contenteditable data-placeholder="Street">Province</div>
+                <div class="input-div text-secondary" contenteditable data-placeholder="City">Город</div>
+                <div class="input-div text-secondary" contenteditable data-placeholder="Postal district">Район</div>
               </div>
 
               <div class="inputLine-div">
-                <div class="input-div" contenteditable data-placeholder="Street">Country</div>
+                <div class="input-div text-secondary" contenteditable data-placeholder="Street">Страна</div>
               </div>
 
               <div class="inputLine-div">
-                <div class="input-div" contenteditable data-placeholder="Postal code">Postal code</div>
+                <div class="input-div text-secondary" contenteditable data-placeholder="Postal code">Почтовый индекс</div>
               </div>
 
             </div>
@@ -254,7 +235,7 @@
             <div class="inputLine-negativeTrail row-body--aligned">
               <div class="select">
                 <select>
-                  <option value="">Custom</option>
+                  <option value="">Дополнительное поле</option>
                 </select>
               </div>
             </div>
@@ -308,12 +289,21 @@
       {% include "_icon" with "arrow-down" %}
     </div>
     <div class="row-body-primary">
-      <figure class="icon-userpic"></figure>
+      <figure class="icon-userpic">
+        {{ "sanzhar.png" | asset_url | image_tag }}
+      </figure>
       Санжар
     </div>
   </div>
 </a>
 <div class="dropdown-menu">
-  Tralalala
+  <div class="dropdown-menu-body">
+    <ul class="dropdown-menu-list">
+    <li><a href="#" class="dropdown-menu-link">Профиль</a></li>
+    <li><a href="#" class="dropdown-menu-link">Настройки</a></li>
+    <li><a href="#" class="dropdown-menu-link">Администрирование</a></li>
+    <li><a href="#" class="dropdown-menu-link">Выход</a></li>
+  </ul>
+  </div>
 </div>
 </div>

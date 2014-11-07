@@ -350,7 +350,7 @@ label { display: inline-block; cursor: pointer; -webkit-user-select: none; -moz-
 label:hover { opacity: 0.8; }
 
 /* line 1, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_stream.sass */
-.stream-item { border: 1px solid #EDEDED; border-radius: 4px; background-color: white; margin: 0.5rem 0; padding: 0.25rem; }
+.stream-item { border: 1px solid #bfbfbf; border-radius: 4px; background-color: white; margin: 0.5rem 0; padding: 0.25rem; }
 /* line 7, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_stream.sass */
 .stream-item.new { border-color: #1583BA; }
 
@@ -529,4 +529,11 @@ label:hover { opacity: 0.8; }
 
 /* line 22, /Users/Vadim/Documents/work-crm/static v3/assets/sass/reuse/_text.sass */
 .text-padLeft { padding-left: 1rem; }
+
+/* line 25, /Users/Vadim/Documents/work-crm/static v3/assets/sass/app.sass */
+a[href="#"], a[href="#"] * { text-decoration: line-through; }
+
+/* line 28, /Users/Vadim/Documents/work-crm/static v3/assets/sass/app.sass */
+a[href="#"] { opacity: 0.3; }
+
 

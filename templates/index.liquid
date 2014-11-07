@@ -46,26 +46,26 @@
               Входящие
             </div>
             <div class="row-body-secondary">
-              xx
+              4
             </div>
           </div>
         </a>
 
-        <a href="/contacts/all" class="row row--oneliner row--link">
+        <a href="#" class="row row--oneliner row--link">
           <div class="row-icon"></div>
           <div class="row-body">
             <div class="row-body-primary">
               Все
             </div>
             <div class="row-body-secondary">
-              xx
+              36
             </div>
           </div>
         </a>
 
 
 
-        <a href="/contacts/recents" class="row row--oneliner row--link">
+        <a href="#" class="row row--oneliner row--link">
           <div class="row-icon"></div>
           <div class="row-body">
             <div class="row-body-primary">
@@ -77,7 +77,7 @@
           </div>
         </a>
 
-        <a href="/contacts/dealing" class="row row--oneliner row--link">
+        <a href="#" class="row row--oneliner row--link">
           <div class="row-icon"></div>
           <div class="row-body">
             <div class="row-body-primary">
@@ -201,7 +201,7 @@
         <div class="stream-item new">
           <label class="row">
             <div class="row-icon">
-              <input type="checkbox" checked>
+              <input type="checkbox">
               <div class="checkbox-icon">
                 {% include "_icon" with "checkbox-checked" %}
                 {% include "_icon" with "checkbox" %}
@@ -213,7 +213,37 @@
           </label>
           <div class="stream-item-extra row">
             <a href="#" class="row-icon">
-              <figure class="icon-userpic"></figure>
+              <figure class="icon-userpic">
+                {{ "sanzhar.png" | asset_url | image_tag }}
+              </figure>
+            </a>
+            <div class="row-body">
+              <div class="text-caption text-secondary">
+                <a href="#" class="text-secondary">Санжар</a> в 11:07, 7 окт 14
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="stream-item">
+          <label class="row">
+            <div class="row-icon">
+              <input type="checkbox">
+              <div class="checkbox-icon">
+                {% include "_icon" with "checkbox-checked" %}
+                {% include "_icon" with "checkbox" %}
+              </div>
+            </div>
+            <div class="row-body">
+              Ордамед
+            </div>
+          </label>
+          <div class="stream-item-extra row">
+            <a href="#" class="row-icon">
+              <figure class="icon-userpic">
+                {{ "aliya.png" | asset_url | image_tag }}
+              </figure>
             </a>
             <div class="row-body">
               <div class="text-caption text-secondary">
@@ -237,16 +267,18 @@
               </div>
             </div>
             <div class="row-body">
-              Ордамед
+              Payme
             </div>
           </label>
           <div class="stream-item-extra row">
             <a href="#" class="row-icon">
-              <figure class="icon-userpic"></figure>
+              <figure class="icon-userpic">
+                {{ "abish.png" | asset_url | image_tag }}
+              </figure>
             </a>
             <div class="row-body">
               <div class="text-caption text-secondary">
-                <a href="#" class="text-secondary">Абиш</a> в 10:06, 7 окт 14
+                <a href="#" class="text-secondary">Абиш</a> в 17:08, 5 окт 14
               </div>
               <div class="row-body-message">
                 Этот контакт о котором я тебе говорил, нужно отработать
@@ -256,7 +288,38 @@
           </div>
         </div>
 
+        <div class="stream-item">
+          <label class="row">
+            <div class="row-icon">
+              <input type="checkbox">
+              <div class="checkbox-icon">
+                {% include "_icon" with "checkbox-checked" %}
+                {% include "_icon" with "checkbox" %}
+              </div>
+            </div>
+            <div class="row-body">
+              Казахтелеком
+            </div>
+          </label>
+          <div class="stream-item-extra row">
+            <a href="#" class="row-icon">
+              <figure class="icon-userpic">
+                {{ "aliya.png" | asset_url | image_tag }}
+              </figure>
+            </a>
+            <div class="row-body">
+              <div class="text-caption text-secondary">
+                <a href="#" class="text-secondary">Алия</a> в 16:13, 2 окт 14
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
+
+      </div>
+
 
     </div>
   </div>

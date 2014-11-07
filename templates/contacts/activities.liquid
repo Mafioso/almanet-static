@@ -1,0 +1,132 @@
+{% block title %}
+Contacts | All &mdash; Almanet
+{% endblock %}
+
+{% block body %}
+
+<div class="body-header nav">
+  <div class="nav-a">
+    <a href="/" class="nav-link active">
+      Контакты
+    </a><a href="#" class="nav-link">
+      События
+    </a><a href="#" class="nav-link">
+      Продукты
+    </a><a href="#" class="nav-link">
+      Поиск
+    </a><a href="#" class="nav-link">
+      Отчеты
+    </a>
+  </div><div class="nav-b">
+
+    {% include "_addContact" %}
+
+  </div><div class="nav-c">
+    <a href="/" class="nav-link nav-link--logotype">
+      {% include "_icon" with "logotype" %}
+    </a>
+  </div>
+</div>
+
+<div class="body-master">
+  <div class="page">
+    <div class="page-header">
+      <ul class="page-breadcrumbs">
+        <li><div class="page-breadcrumbs-link">события</div></li>
+      </ul>
+      <div class="page-header-filterContainer">
+        <div class="page-header-filter row">
+          <div class="row-body row-body--inverted">
+            <div class="row-body-secondary">
+              {% include "_icon" with "arrow-down" %}
+            </div>
+            <div class="row-body-primary row-body-primary--extraOffset">
+              <strong>Все события</strong>
+              <span class="text-caption text-secondary">(выберите цикл продаж)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-header-controls">
+        <a href="/" class="row row--oneliner row--link">
+          <div class="row-icon text-good">
+            {% include "_icon" with "add" %}
+          </div>
+          <div class="row-body">
+            Добавить событие
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="page-body">
+      <div class="stream-item">
+        <div class="row">
+          <div class="row-icon">
+            [i]
+          </div>
+          <div class="row-body row-body--no-trailer">
+            <div class="row">
+              <a href="#" class="row-icon">
+                <figure class="icon-userpic"></figure>
+              </a>
+              <div class="row-body">
+                <div class="row">
+                  <div class="row-body-primary text-caption text-secondary">
+                    <a href="#" class="text-secondary">Абиш</a> в 10:06, 7 окт 14
+                  </div>
+                  <div class="row-body-secondary">
+                    <a href="#" class="link-inline">
+                      [c]
+                    </a>
+                  </div>
+                </div>
+                <div class="row-body-message">
+                  Назначена встреча с Генеральным директором, через Директора по общим вопросам <a href="#" class="link-tag">#meeting</a>
+                </div>
+                <ul class="stream-breadcrumbs">
+                  <li><a href="#" class="stream-breadcrumbs">РБК Банк</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stream-item">
+        <div class="row">
+          <div class="row-icon">
+            [i]
+          </div>
+          <div class="row-body row-body--no-trailer">
+            <div class="row">
+              <a href="#" class="row-icon">
+                <figure class="icon-userpic"></figure>
+              </a>
+              <div class="row-body">
+                <div class="row">
+                  <div class="row-body-primary text-caption text-secondary">
+                    <a href="#" class="text-secondary">Абиш</a> в 10:06, 7 окт 14
+                  </div>
+                  <div class="row-body-secondary">
+                    <a href="#" class="link-inline">
+                      [c]
+                    </a>
+                  </div>
+                </div>
+                <div class="row-body-message">
+                  Проведена встреча с Генеральным директором, была показана презентация документооборота
+                </div>
+                <ul class="stream-breadcrumbs">
+                  <li><a href="#" class="stream-breadcrumbs">РБК Банк</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

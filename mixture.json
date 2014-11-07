@@ -20,6 +20,7 @@
   "preprocessorStyleOutput": "assets/css",
   "projectDescription": "The next generation of CRM",
   "projectName": "crm-static",
+  "publishedId": "18562",
   "sass": {
     "globbing": false,
     "lineNumbers": false,
